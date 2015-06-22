@@ -1,0 +1,16 @@
+
+
+
+
+
+function jwplayer_field_instance_settings_form($field, $instance) {
+  $settings = $instance['settings'];
+
+  $form['show_progress'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show a progress bar during uploading'),
+    '#default_value' => $settings['show_progress'],
+  );
+
+  return $form;
+}
